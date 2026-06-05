@@ -4,391 +4,579 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Jefferson Montador | Montagem e Reparos de Móveis, Cortinas | Cacoal-RO</title>
-  <meta name="description" content="Jefferson Montador em Cacoal-RO e região: montagem e instalações de móveis e cortinas, além de reparos. Atendimento rápido e orçamento por item." />
+  <title>Montagem de Móveis com Qualidade e Garantia | Jeffersom</title>
+  <meta name="description" content="Montagem de móveis com qualidade e garantia. Serviços como guarda-roupa, cozinha, painel de TV e mais. Atendimento rápido em Cacoal e região." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- SEO/OG -->
+  <meta property="og:title" content="Montagem de Móveis com Qualidade e Garantia | Jeffersom" />
+  <meta property="og:description" content="Montagem de móveis com qualidade e garantia em Cacoal e região." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="./assets/images/og-cover.jpg" />
 
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="theme-color" content="#0b3a53" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Montagem de Móveis com Qualidade e Garantia | Jeffersom" />
+  <meta name="twitter:description" content="Montagem de móveis com qualidade e garantia em Cacoal e região." />
+  <meta name="twitter:image" content="./assets/images/og-cover.jpg" />
+
+  <!-- Schema (básico) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Jeffersom - Montagem de Móveis",
+    "areaServed": "Cacoal e região",
+    "priceRange": "$$",
+    "telephone": "+5569992131686",
+    "url": "./",
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Montagem e reparos de móveis"
+      }
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <!-- WhatsApp flutuante -->
+  <a class="wa-float" href="https://wa.me/5569992131686" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+    <span class="wa-float__pulse" aria-hidden="true"></span>
+    <span class="wa-float__icon" aria-hidden="true">✦</span>
+  </a>
 
-  <header class="header" id="topo">
+  <!-- Header -->
+  <header class="header" id="top">
     <div class="container header__inner">
-      <a class="brand" href="#">
-        <span class="brand__logo" aria-hidden="true">JM</span>
-        <span class="brand__text">
-          <span class="brand__name">Jefferson Montador</span>
-          <span class="brand__tag">Montagem • Instalações • Reparos</span>
-        </span>
+      <a class="brand" href="#top" aria-label="Início">
+        <span class="brand__mark" aria-hidden="true">J</span>
+        <span class="brand__text">Jeffersom</span>
       </a>
 
       <nav class="nav" aria-label="Navegação principal">
-        <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-        <ul class="nav__list" id="menu">
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
-          <li><a href="#como-funciona">Como funciona</a></li>
-          <li><a href="#contato">Orçamento</a></li>
-        </ul>
+        <a class="nav__link" href="#sobre">Sobre</a>
+        <a class="nav__link" href="#video">Vídeo</a>
+        <a class="nav__link" href="#servicos">Serviços</a>
+        <a class="nav__link" href="#galeria">Galeria</a>
+        <a class="nav__link" href="#depoimentos">Depoimentos</a>
+        <a class="nav__link" href="#contato">Contato</a>
       </nav>
 
       <div class="header__cta">
-        <a class="btn btn--primary" id="btn-whatsapp" href="#contato">
-          Orçar no WhatsApp
-        </a>
+        <a class="btn btn--primary btn--small" href="#contato">Solicitar Orçamento</a>
+      </div>
+
+      <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" id="mobileMenu" hidden>
+      <div class="container mobile__inner">
+        <a class="mobile__link" href="#sobre">Sobre</a>
+        <a class="mobile__link" href="#video">Vídeo</a>
+        <a class="mobile__link" href="#servicos">Serviços</a>
+        <a class="mobile__link" href="#galeria">Galeria</a>
+        <a class="mobile__link" href="#depoimentos">Depoimentos</a>
+        <a class="mobile__link" href="#contato">Contato</a>
+        <a class="btn btn--primary btn--full" href="#contato">Solicitar Orçamento</a>
       </div>
     </div>
   </header>
 
-  <main id="conteudo">
+  <main>
     <section class="hero">
-      <div class="container hero__grid">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
         <div class="hero__content">
-          <p class="pill">Cacoal-RO e região</p>
-          <h1>Montagem e instalações de móveis e cortinas, com reparos.</h1>
-          <p class="lead">
-            Atendimento profissional para deixar seu ambiente pronto e bem ajustado.
-            Orçamento por item e combinado no WhatsApp.
+          <div class="kicker">Montagem & Reparos de Móveis</div>
+          <h1 class="hero__title">Montagem de Móveis com Qualidade e Garantia</h1>
+          <p class="hero__subtitle">
+            Serviço profissional, preço justo e atendimento rápido em <strong>Cacoal e região</strong>. Seu móvel montado com cuidado e acabamento.
           </p>
 
           <div class="hero__actions">
-            <a class="btn btn--primary btn--lg" id="hero-whatsapp" href="#contato">
-              Chamar no WhatsApp
-            </a>
-            <a class="btn btn--ghost btn--lg" href="#servicos">Ver serviços</a>
+            <a class="btn btn--primary" href="https://wa.me/5569992131686" target="_blank" rel="noopener noreferrer">Fale Comigo no WhatsApp</a>
+            <a class="btn btn--ghost" href="#servicos">Ver Serviços</a>
           </div>
 
-          <div class="hero__trust" role="list" aria-label="Destaques">
-            <div class="trust-card" role="listitem">
-              <div class="trust-card__icon" aria-hidden="true">✓</div>
+          <div class="hero__trust">
+            <div class="trust">
+              <div class="trust__icon" aria-hidden="true">⏱</div>
               <div>
-                <strong>Serviço caprichado</strong>
-                <span>acabamento e alinhamento</span>
+                <div class="trust__title">Atendimento rápido</div>
+                <div class="trust__text">Agende pelo WhatsApp</div>
               </div>
             </div>
-            <div class="trust-card" role="listitem">
-              <div class="trust-card__icon" aria-hidden="true">💬</div>
+            <div class="trust">
+              <div class="trust__icon" aria-hidden="true">✔</div>
               <div>
-                <strong>Orçamento rápido</strong>
-                <span>por item e combinado</span>
-              </div>
-            </div>
-            <div class="trust-card" role="listitem">
-              <div class="trust-card__icon" aria-hidden="true">📍</div>
-              <div>
-                <strong>Atende na região</strong>
-                <span>Cacoal e entorno</span>
+                <div class="trust__title">Garantia de serviço</div>
+                <div class="trust__text">Trabalho conferido</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="hero__visual" aria-label="Imagem ilustrativa">
-          <div class="visual-card">
-            <div class="visual-card__header">
-              <span class="dot dot--green" aria-hidden="true"></span>
-              <span class="dot dot--yellow" aria-hidden="true"></span>
-              <span class="dot dot--red" aria-hidden="true"></span>
-              <span class="visual-card__title">Agendamento</span>
+        <div class="hero__media">
+          <div class="media-card">
+            <img
+              class="media-card__img"
+              src="./assets/images/hero/image.png"
+              alt="Montagem de móveis"
+              loading="lazy"
+            />
+            <div class="media-card__overlay">
+              <span class="badge badge--green">Cacoal</span>
             </div>
-            <div class="visual-card__body">
-              <p class="visual-card__subtitle">Envie uma mensagem</p>
-              <p class="visual-card__big">“Olá! Quero orçamento para <span id="quick-topic">montagem</span>.”</p>
-              <p class="visual-card__small">Resposta por WhatsApp com orientações e valor por item.</p>
-              <div class="visual-card__chips" role="list">
-                <span class="chip" role="listitem">Cozinha</span>
-                <span class="chip" role="listitem">Quartos</span>
-                <span class="chip" role="listitem">Cortinas</span>
-                <span class="chip" role="listitem">Reparos</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero__side-card">
-            <p class="side-card__label">Contato</p>
-            <p class="side-card__value" id="telefone-valor">(69) 992-131-686</p>
-            <p class="side-card__muted">WhatsApp com atendimento rápido.</p>
-<a class="btn btn--primary" id="side-whatsapp" href="#contato" aria-label="Solicitar no WhatsApp">Solicitar agora</a>
           </div>
         </div>
       </div>
-
-      <div class="hero__bg" aria-hidden="true"></div>
     </section>
 
+    <!-- Sobre -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Sobre Mim</h2>
+          <p class="section__sub">Trabalho como montador autônomo — foco total em qualidade, acabamento e confiança.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="about-card reveal">
+            <img class="about-card__img" src="./assets/images/sobre.jpg" alt="Foto do montador" loading="lazy" />
+            <div class="about-card__cap">Jeffersom • Montagem profissional</div>
+          </div>
+
+          <div class="about-text reveal">
+            <p>
+              Tenho experiência em montagem e ajustes de móveis residenciais e planejados. Meu objetivo é entregar um resultado firme,
+              alinhado e bonito — com cuidado em cada etapa.
+            </p>
+            <p class="muted">
+              Atendimento pensado para facilitar: você solicita, eu confirmo detalhes e agendo. Serviço com garantia.
+            </p>
+
+            <div class="diferenciais">
+              <div class="diff">
+                <div class="diff__icon" aria-hidden="true">⚡</div>
+                <div>
+                  <div class="diff__title">Atendimento rápido</div>
+                  <div class="diff__text">Resposta ágil no WhatsApp</div>
+                </div>
+              </div>
+              <div class="diff">
+                <div class="diff__icon" aria-hidden="true">🏗</div>
+                <div>
+                  <div class="diff__title">Serviço profissional</div>
+                  <div class="diff__text">Montagem com padrão</div>
+                </div>
+              </div>
+              <div class="diff">
+                <div class="diff__icon" aria-hidden="true">💎</div>
+                <div>
+                  <div class="diff__title">Preço justo</div>
+                  <div class="diff__text">Transparência e custo-benefício</div>
+                </div>
+              </div>
+              <div class="diff">
+                <div class="diff__icon" aria-hidden="true">🛡</div>
+                <div>
+                  <div class="diff__title">Garantia de serviço</div>
+                  <div class="diff__text">Ajustes se necessário</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="inline-cta">
+              <a class="btn btn--primary" href="https://wa.me/5569992131686" target="_blank" rel="noopener noreferrer">Solicitar agora</a>
+              <a class="btn btn--link" href="#galeria">Ver fotos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vídeo -->
+    <section class="section section--alt" id="video">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Área de Vídeo</h2>
+          <p class="section__sub">Assista ao processo e veja o cuidado com o acabamento.</p>
+        </div>
+
+        <div class="video-grid reveal">
+          <div class="video-card">
+            <div class="video-card__top">
+              <h3 class="h3">Vídeo institucional</h3>
+              <p class="muted">Você pode trocar pelo seu vídeo do YouTube (embed abaixo).</p>
+            </div>
+
+            <div class="yt">
+              <!-- Substitua o ID do vídeo: https://www.youtube.com/watch?v=SEU_ID -->
+              <iframe
+                loading="lazy"
+                src="https://www.youtube.com/embed/5qap5aO4i9A"
+                title="Vídeo de montagem de móveis"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <div class="video-aside">
+            <div class="mini-stat">
+
+
+              <div class="mini-stat__num">+</div>
+              <div>
+                <div class="mini-stat__title">Montagens com capricho</div>
+                <div class="mini-stat__text">Ajustes alinhados e firmes</div>
+              </div>
+            </div>
+            <div class="mini-stat">
+              <div class="mini-stat__num">✓</div>
+              <div>
+                <div class="mini-stat__title">Garantia</div>
+                <div class="mini-stat__text">Qualidade do serviço</div>
+              </div>
+            </div>
+
+          <a class="btn btn--ghost" href="#contato">Solicitar orçamento</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
     <section class="section" id="servicos">
       <div class="container">
         <div class="section__head">
-          <h2>Serviços</h2>
-          <p>O que você precisa para deixar pronto, alinhado e funcionando bem.</p>
+          <h2 class="h2">Serviços</h2>
+          <p class="section__sub">Atendimento exclusivo para este profissional — agende diretamente com o Jeffersom.</p>
         </div>
 
-        <div class="grid grid--3">
-          <article class="service">
-            <div class="service__icon" aria-hidden="true">🧰</div>
-            <h3>Montagem de móveis</h3>
-            <p>Armários, guarda-roupas, racks, mesas e outros, com ajuste e acabamento.</p>
+        <div class="cards reveal">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">▦</div>
+            <h3 class="card__title">Montagem de Guarda-Roupa</h3>
+            <p class="card__text">Montagem, nivelamento e ajustes para portas e corrediças.</p>
           </article>
-          <article class="service">
-            <div class="service__icon" aria-hidden="true">🔩</div>
-            <h3>Instalações</h3>
-            <p>Instalação de móveis e serviços correlatos para sua casa.</p>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">▤</div>
+            <h3 class="card__title">Montagem de Cozinha</h3>
+            <p class="card__text">Planejado com atenção a alinhamento e acabamento.</p>
           </article>
-          <article class="service">
-            <div class="service__icon" aria-hidden="true">🪟</div>
-            <h3>Cortinas</h3>
-            <p>Instalação e ajustes para deixar o ambiente mais bonito e funcional.</p>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">▣</div>
+            <h3 class="card__title">Montagem de Painel de TV</h3>
+            <p class="card__text">Fixação segura e acabamento limpo.</p>
           </article>
-          <article class="service">
-            <div class="service__icon" aria-hidden="true">🧩</div>
-            <h3>Reparos</h3>
-            <p>Correções e ajustes em partes danificadas para recuperar o funcionamento.</p>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">▥</div>
+            <h3 class="card__title">Montagem de Escritório</h3>
+            <p class="card__text">Mesas, armários e organização para seu espaço.</p>
           </article>
-          <article class="service service--wide">
-            <div>
-              <h3>Orçamento por item</h3>
-              <p>
-                Você informa o que precisa, envia detalhes no WhatsApp e o valor é combinado.
-                Sem surpresa.
-              </p>
-              <div class="service__bullets" aria-label="Benefícios">
-                <div class="check">✓ Atendimento por mensagem</div>
-                <div class="check">✓ Serviço organizado e pontual</div>
-                <div class="check">✓ Capricho no resultado</div>
-              </div>
-            </div>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">⟲</div>
+            <h3 class="card__title">Desmontagem de Móveis</h3>
+            <p class="card__text">Desmontagem com cuidado para transporte ou mudança.</p>
           </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">⌁</div>
+            <h3 class="card__title">Reparos e Ajustes</h3>
+            <p class="card__text">Correções, ajustes de portas e soluções para funcionalidade.</p>
+          </article>
+        </div>
+
+        <div class="cta-band reveal">
+          <div>
+            <div class="cta-band__title">Precisa montar ou ajustar algum móvel?</div>
+            <div class="cta-band__text">Envie as informações e receba seu orçamento rapidamente.</div>
+          </div>
+          <div class="cta-band__actions">
+            <a class="btn btn--primary" href="https://wa.me/5569992131686" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn--ghost" href="#contato">Formulário</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="portfolio">
+    <!-- Galeria -->
+    <section class="section section--alt" id="galeria">
       <div class="container">
         <div class="section__head">
-          <h2>Portfólio</h2>
-          <p>Em breve com fotos reais. Por enquanto, veja exemplos de como será exibido.</p>
+          <h2 class="h2">Galeria de Fotos</h2>
+          <p class="section__sub">Categoria: <strong>Antes e Depois</strong>. Clique para ampliar.</p>
         </div>
 
-        <div class="filter">
-          <button class="filter__btn is-active" data-filter="todos" type="button">Todos</button>
-          <button class="filter__btn" data-filter="montagem" type="button">Montagem</button>
-          <button class="filter__btn" data-filter="cortinas" type="button">Cortinas</button>
-          <button class="filter__btn" data-filter="reparos" type="button">Reparos</button>
+        <div class="gallery-controls reveal">
+          <div class="chip chip--active" data-filter="all">Tudo</div>
+          <div class="chip" data-filter="antes">Antes</div>
+          <div class="chip" data-filter="depois">Depois</div>
         </div>
 
-        <div class="gallery" role="list" aria-label="Galeria">
-          <!-- Placeholder cards (trocar depois por fotos reais) -->
-          <figure class="gallery__item" role="listitem" data-tag="montagem">
-            <div class="gallery__img" aria-hidden="true">
-              <span>Montagem</span>
-            </div>
-            <figcaption>
-              <strong>Montagem — Guarda-roupa</strong>
-              <span>Cacoal-RO • exemplo</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery__item" role="listitem" data-tag="montagem">
-            <div class="gallery__img" aria-hidden="true">
-              <span>Montagem</span>
-            </div>
-            <figcaption>
-              <strong>Montagem — Cozinha</strong>
-              <span>Cacoal-RO • exemplo</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery__item" role="listitem" data-tag="cortinas">
-            <div class="gallery__img" aria-hidden="true">
-              <span>Cortinas</span>
-            </div>
-            <figcaption>
-              <strong>Instalação — Cortinas</strong>
-              <span>Cacoal-RO • exemplo</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery__item" role="listitem" data-tag="reparos">
-            <div class="gallery__img" aria-hidden="true">
-              <span>Reparos</span>
-            </div>
-            <figcaption>
-              <strong>Reparo — Ajustes</strong>
-              <span>Cacoal-RO • exemplo</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery__item" role="listitem" data-tag="cortinas">
-            <div class="gallery__img" aria-hidden="true">
-              <span>Cortinas</span>
-            </div>
-            <figcaption>
-              <strong>Instalação — Varão e fixações</strong>
-              <span>Cacoal-RO • exemplo</span>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery__item" role="listitem" data-tag="reparos">
-            <div class="gallery__img" aria-hidden="true">
-              <span>Reparos</span>
-            </div>
-            <figcaption>
-              <strong>Reparo — Portas/grades</strong>
-              <span>Cacoal-RO • exemplo</span>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="como-funciona">
-      <div class="container">
-        <div class="section__head">
-          <h2>Como funciona</h2>
-          <p>Do primeiro contato ao serviço concluído.</p>
-        </div>
-
-        <div class="steps" role="list" aria-label="Etapas">
-          <div class="step" role="listitem">
-            <div class="step__num">1</div>
-            <h3>Chame no WhatsApp</h3>
-            <p>Envie o que precisa + cidade/bairro e, se possível, uma foto.</p>
-          </div>
-          <div class="step" role="listitem">
-            <div class="step__num">2</div>
-            <h3>Orçamento por item</h3>
-            <p>Valor combinado com base no serviço solicitado.</p>
-          </div>
-          <div class="step" role="listitem">
-            <div class="step__num">3</div>
-            <h3>Agendamento e execução</h3>
-            <p>Atendimento organizado para entregar o resultado com capricho.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="depoimentos">
-      <div class="container">
-        <div class="section__head">
-          <h2>Depoimentos</h2>
-          <p>Ficam aqui placeholders. Você pode adicionar avaliações reais depois.</p>
-        </div>
-
-        <div class="grid grid--3">
-          <article class="testimonial">
-            <div class="testimonial__stars" aria-hidden="true">★★★★★</div>
-            <p>“Serviço rápido e bem feito. Ficou perfeito!”</p>
-            <strong>— Cliente</strong>
-          </article>
-          <article class="testimonial">
-            <div class="testimonial__stars" aria-hidden="true">★★★★★</div>
-            <p>“Atendimento pelo WhatsApp foi super prático.”</p>
-            <strong>— Cliente</strong>
-          </article>
-          <article class="testimonial">
-            <div class="testimonial__stars" aria-hidden="true">★★★★★</div>
-            <p>“Reparos e ajustes com muito cuidado.”</p>
-            <strong>— Cliente</strong>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contato">
-      <div class="container contact__grid">
-        <div>
-          <h2>Solicite seu orçamento</h2>
-          <p class="lead" style="margin-top:.5rem;">
-            Informe o serviço e sua localização. Eu retorno com as orientações e o valor por item.
-          </p>
-
-          <div class="contact__info" role="list" aria-label="Informações">
-            <div class="info-card" role="listitem">
-              <div class="info-card__icon" aria-hidden="true">📍</div>
-              <div>
-                <strong>Cacoal-RO e região</strong>
-                <span>Atendimento local</span>
-              </div>
-            </div>
-            <div class="info-card" role="listitem">
-              <div class="info-card__icon" aria-hidden="true">☎️</div>
-              <div>
-                <strong id="whatsapp-display">(69) 992-131-686</strong>
-                <span>WhatsApp</span>
-              </div>
-            </div>
-          </div>
-
-<div class="contact__cta" id="contact-cta">
-            <a class="btn btn--primary btn--lg" id="whatsapp-cta" href="#">
-              Falar com Jefferson
-            </a>
-            <p class="muted">Você será direcionado ao WhatsApp.</p>
-          </div>
-        </div>
-
-        <form class="form" id="form-contato">
-          <label>
-            Seu nome
-            <input name="nome" placeholder="Ex: Maria" autocomplete="name" required />
-          </label>
-          <label>
-            WhatsApp (com DDD)
-            <input name="whatsapp" inputmode="tel" placeholder="Ex: 69 99999-9999" required />
-          </label>
-          <label>
-            Serviço desejado
-            <select name="servico" required>
-              <option value="montagem">Montagem de móveis</option>
-              <option value="instalacoes">Instalações de móveis</option>
-              <option value="cortinas">Instalação de cortinas</option>
-              <option value="reparos">Reparos</option>
-            </select>
-          </label>
-          <label>
-            Mensagem
-            <textarea name="mensagem" rows="4" placeholder="Conte rapidamente o que precisa..." required></textarea>
-          </label>
-
-          <button class="btn btn--primary btn--lg" type="submit">
-            Enviar pelo WhatsApp
+        <div class="gallery reveal" id="gallery">
+          <!-- Use suas imagens em assets/images/galeria/ -->
+          <button class="photo" data-kind="antes" type="button" aria-label="Antes - Guarda-Roupa">
+            <img src="./assets/images/galeria/antes-1.jpg" alt="Antes - Guarda-Roupa" loading="lazy" />
+            <span class="photo__tag">Antes</span>
           </button>
+          <button class="photo" data-kind="depois" type="button" aria-label="Depois - Guarda-Roupa">
+            <img src="./assets/images/galeria/depois-1.jpg" alt="Depois - Guarda-Roupa" loading="lazy" />
+            <span class="photo__tag photo__tag--ok">Depois</span>
+          </button>
+          <button class="photo" data-kind="antes" type="button" aria-label="Antes - Cozinha">
+            <img src="./assets/images/galeria/antes-2.jpg" alt="Antes - Cozinha" loading="lazy" />
+            <span class="photo__tag">Antes</span>
+          </button>
+          <button class="photo" data-kind="depois" type="button" aria-label="Depois - Cozinha">
+            <img src="./assets/images/galeria/depois-2.jpg" alt="Depois - Cozinha" loading="lazy" />
+            <span class="photo__tag photo__tag--ok">Depois</span>
+          </button>
+          <button class="photo" data-kind="antes" type="button" aria-label="Antes - Painel TV">
+            <img src="./assets/images/galeria/antes-3.jpg" alt="Antes - Painel TV" loading="lazy" />
+            <span class="photo__tag">Antes</span>
+          </button>
+          <button class="photo" data-kind="depois" type="button" aria-label="Depois - Painel TV">
+            <img src="./assets/images/galeria/depois-3.jpg" alt="Depois - Painel TV" loading="lazy" />
+            <span class="photo__tag photo__tag--ok">Depois</span>
+          </button>
+        </div>
 
-          <p class="form__fineprint">
-            Ao enviar, o WhatsApp será aberto com sua mensagem pronta.
-          </p>
-        </form>
+        <div class="modal" id="photoModal" aria-hidden="true">
+          <div class="modal__content" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+            <button class="modal__close" type="button" aria-label="Fechar">✕</button>
+            <img class="modal__img" src="" alt="" />
+            <div class="modal__caption" id="modalCaption"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Depoimentos</h2>
+          <p class="section__sub">Avaliações reais ajudam a gerar confiança. (Edite as informações abaixo.)</p>
+        </div>
+
+        <div class="testimonials reveal">
+          <article class="testimonial">
+            <div class="stars" aria-label="5 estrelas">
+              ★★★★★
+            </div>
+            <p class="testimonial__text">“Trabalho excelente! Ficou perfeito e com acabamento bem feito. Voltaria a contratar.”</p>
+            <div class="testimonial__meta">
+              <div class="avatar" aria-hidden="true">C</div>
+              <div>
+                <div class="testimonial__name">Cliente</div>
+                <div class="testimonial__place">Cacoal</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <div class="stars" aria-label="5 estrelas">
+              ★★★★★
+            </div>
+            <p class="testimonial__text">“Atendimento rápido e preço justo. Chegou, montou tudo certinho e ainda fez ajustes.”</p>
+            <div class="testimonial__meta">
+              <div class="avatar" aria-hidden="true">R</div>
+              <div>
+                <div class="testimonial__name">Cliente</div>
+                <div class="testimonial__place">Região</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <div class="stars" aria-label="5 estrelas">
+              ★★★★★
+            </div>
+            <p class="testimonial__text">“Profissional e cuidadoso. Recomendo muito!”</p>
+            <div class="testimonial__meta">
+              <div class="avatar" aria-hidden="true">J</div>
+              <div>
+                <div class="testimonial__name">Cliente</div>
+                <div class="testimonial__place">Cacoal</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato/Formulário -->
+    <section class="section section--alt" id="contato">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Solicitar Orçamento</h2>
+          <p class="section__sub">Preencha os dados e envie sua solicitação. Você será atendido pelo WhatsApp.</p>
+        </div>
+
+        <div class="grid-2 form-wrap reveal">
+          <form class="form" id="contactForm" autocomplete="on">
+            <div class="form__grid">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" required placeholder="Seu nome" />
+              </div>
+              <div class="field">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" required placeholder="(DDD) 99999-9999" />
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" />
+              </div>
+              <div class="field">
+                <label for="cidade">Cidade</label>
+                <input id="cidade" name="cidade" type="text" required placeholder="Cacoal" />
+              </div>
+              <div class="field field--full">
+                <label for="servico">Serviço desejado</label>
+                <select id="servico" name="servico" required>
+                  <option value="">Selecione...</option>
+                  <option>Montagem de Guarda-Roupa</option>
+                  <option>Montagem de Cozinha</option>
+                  <option>Montagem de Painel de TV</option>
+                  <option>Montagem de Escritório</option>
+                  <option>Desmontagem de Móveis</option>
+                  <option>Reparos e Ajustes</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Conte detalhes do móvel e disponibilidade..."></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn--primary btn--full" type="submit">Enviar Solicitação</button>
+
+            <p class="form__hint">Ao enviar, você será direcionado para o WhatsApp com sua mensagem pronta.</p>
+          </form>
+
+          <aside class="side">
+            <div class="side__card">
+              <h3 class="h3">Atendimento</h3>
+              <p class="muted">Região: <strong>Cacoal e região</strong></p>
+              <div class="side__list">
+                <div class="side__item">⏱ Resposta rápida</div>
+                <div class="side__item">✔ Garantia de serviço</div>
+                <div class="side__item">💎 Preço justo</div>
+              </div>
+              <a class="btn btn--ghost btn--full" href="https://wa.me/5569992131686" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+            </div>
+
+            <div class="side__card">
+              <h3 class="h3">Compartilhe fotos</h3>
+              <p class="muted">Se puder, envie fotos do móvel (antes/depois) para facilitar o orçamento.</p>
+              <div class="photo-placeholder" aria-hidden="true">
+                <div></div><div></div><div></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Localização -->
+    <section class="section" id="localizacao">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Localização</h2>
+          <p class="section__sub">Região de atendimento e área coberta.</p>
+        </div>
+
+        <div class="grid-2 reveal">
+          <div class="map-card">
+            <iframe
+              loading="lazy"
+              title="Mapa - Cacoal e região"
+              src="https://www.google.com/maps?q=Cacoal%20RO&output=embed"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+
+          <div class="location-card">
+          <div class="location-card__inner">
+              <h3 class="h3">Atendo em</h3>
+              <p class="muted">Cacoal e região</p>
+              <p class="muted">Cacoal e região (informe o endereço no WhatsApp).</p>
+
+              <ul class="location-list">
+                <li>⛟ Atendimento sob agendamento</li>
+                <li>🛠 Montagem e reparos</li>
+                <li>📍 Confirmação de deslocamento</li>
+              </ul>
+              <a class="btn btn--primary" href="https://wa.me/5569992131686" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- Rodapé -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div>
-        <strong>Jefferson Montador</strong>
-        <p class="muted">Montagem e instalações de móveis e cortinas • Reparos</p>
+      <div class="footer__brand">
+        <div class="footer__logo" aria-hidden="true">J</div>
+        <div>
+          <div class="footer__name">Jeffersom</div>
+          <div class="footer__tag">Montagem de móveis • Cacoal e região</div>
+        </div>
       </div>
-      <div class="footer__links">
-        <a href="#servicos">Serviços</a>
-        <a href="#portfolio">Portfólio</a>
-        <a href="#contato">Orçamento</a>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <div class="footer__title">Links rápidos</div>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__title">Redes</div>
+          <a href="https://wa.me/5569992131686" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://instagram.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer">Instagram</a>
+
+          <a href="mailto:seuemail@exemplo.com">E-mail</a>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__title">Contato</div>
+          <a href="tel:+5569992131686">+55 69 99213-1686</a>
+          <span class="footer__muted">Atendimento: Cacoal e região</span>
+        </div>
       </div>
-      <div class="footer__copy">© <span id="year"></span> Jefferson Montador • Cacoal-RO</div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© <span id="year"></span> Jeffersom. Todos os direitos reservados.</span>
+        <span class="footer__muted">Feito para gerar confiança e pedidos de orçamento.</span>
+      </div>
     </div>
   </footer>
 
-  <a class="wa-float" id="wa-float" href="#" aria-label="Chamar no WhatsApp">
-    <span class="wa-float__icon" aria-hidden="true">💬</span>
-    <span class="wa-float__text">WhatsApp</span>
-  </a>
-
-  <script src="script.js"></script>
+  <script src="./app.js" defer></script>
 </body>
 </html>
 
